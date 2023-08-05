@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistemas de multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h <!--Essa linha é onde o usuário irá digitar -->
+    <input type="button" value="verificar" onclick="calcular()"> <!--onclick é uma ação-->
+    <div id="res"></div>
+
+    <script>
+        function calcular() {
+
+            var txtv = window.document.getElementById('txtvel') // vai ser a ligação do JS com a caixa de texto txtvel. Pode deixar assim também = window.document.querySelector('txtvel')
+
+            var res = window.document.querySelector('div#res') // vai dá o resultado do que foi digitado na caixa de texto
+
+            var vel = Number(txtv.value) // valor que vai ser digitado dentro da caixa de texto
+
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel} km/h</strong> </p>` // essa linha vai escrever dentro da div o resultado do que foi escrito
+
+            if (vel > 60) {
+                res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com sinto de segurança!</p>` // está concatenado (+=) com id = 'res'
+        }
+    </script>
+
+</body>
+</html>

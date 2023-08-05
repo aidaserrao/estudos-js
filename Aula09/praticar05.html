@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body {
+            background: rgb(120, 120, 211);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos de DOM!</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div>Clique em mim</div>
+
+    <script>
+        var p1 = window.document.getElementsByTagName('p')[1]  
+        window.document.write('Está escrito assim: ' + p1.innerText)  
+
+        /*           elemento por Marca
+        var p1 = window.document.getElementsByTagName('p')[1]  
+        // window.document.write(window.document.URL) write significar ESCREVA.
+        // o número zero é do primeiro paragráfo e o 1 é do segundo paragragráfo, assim sucessivamente.
+        */
+        
+        /*
+         window.document.write('Está escrito assim: ' + p1.innerText)
+         //o innerText vai escrever na tela, o texto que está dentro do primeiro paragrágrafo.
+        */
+    </script>
+</body>
+</html>

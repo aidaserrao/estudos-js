@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País onde mora</title>
+</head>
+<body>
+    <h1>Onde você mora</h1>
+    Escreva onde você mora: <input type="text" name="br" id="br">
+    <input type="button" value="verificar" onclick="calcular()">
+    <input type="button" value="Limpar" onclick="limpar()">
+    <div id="pais"></div>
+    
+    <script>
+        function calcular (){
+            var br = window.document.querySelector('input#br')
+            var pais = window.document.querySelector('div#pais')
+
+            pais.innerHTML = `Vivendo em ${br.value}`
+
+            if (br.value != 'brasil') {
+                pais.innerHTML = `Você é estrangeiro`
+            } else {
+                pais.innerHTML = `Você é brasileiro`
+            }
+
+        }
+       
+        function limpar () {
+            var br = window.document.querySelector('input#br')
+            br.value = ''
+
+        }
+
+    </script>
+
+</body>
+</html>

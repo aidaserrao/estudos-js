@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Eleitoral</title>
+   
+</head>
+<body>
+    <p>Sistema Eleitoral!!!</p>
+    Qual a sua idade? <input type="number" name="asd" id="asd">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <input type="button" value="Limpar" onclick="limpar()" > 
+    <div id="valor"></div>
+
+    <script>
+        function calcular() {
+            //var a = window.document.getElementById('asd')
+            var b = window.document.getElementById('valor')
+
+            //b.innerHTML = `<p>Está apto para votar!!! <strong>${asd.value}</strong> anos.</p>`
+
+            if (asd.value > 16){
+                b.innerHTML = '<p>Apto para votar!</p>'
+            } else {
+                b.innerHTML = '<p>inapto para votar!</p>'
+            } if (asd.value >=60) {
+                b.innerHTML = '<p>Você escolhe se quer votar ou não!</p>'
+            }
+        }
+
+        function limpar(){
+            //var a = window.document.getElementById('asd')
+            asd.value = '' 
+
+        }
+    </script>
+</body>
+</html>

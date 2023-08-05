@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando!!!</title>
+</head>
+<body>
+    <h1>Em que país você mora?</h1>
+    Digite o País que você mora: <input type="text" name="asd" id="asd">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="pais">
+
+    </div>
+
+    <script>
+        function calcular(){
+            var a = window.document.getElementById('asd')
+            var b = window.document.getElementById('pais')
+
+            b.innerHTML = `<p>Vivendo em: ${asd.value}<p>`
+
+            if (asd.value == 'brasil') {
+                b.innerHTML = `Você é Brasileiro!!!`
+                } else {
+                b.innerHTML = `Você é Estrangeiro!!!`
+                }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <style>
+        div#nome {
+            font: normal 18px Arial;
+            background: pink;
+            color: green;
+            width: 200px;  
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Olá mundo!</h1>
+    <p>Clique no nome: </p>
+
+    <div id="nome" onmouseenter="entar()" onmouseout="sair()">
+        Aida
+    </div>
+
+    <script>
+        var a = window.document.getElementById('nome')
+
+        function entar () {
+            var e = a.innerText
+            a.innerText = e + ' AIDA'
+        }
+        function sair(){
+            var e = a.innerText 
+            a.innerText = e + ' aida'
+        }
+        
+
+    </script>
+      
+</body>
+</html>

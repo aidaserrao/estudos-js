@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 001</title>
+</head>
+<body>
+    <button onclick="clicar('Aida Serrão')">Aida2</button>
+    <button onclick="clicar('Geda')">Geda</button>
+    <button onclick="clicar('Sendy')">Sendy</button>
+    <button onclick="clicar('Xandeko')">Xandy</button>
+    <button onclick="saudacao('Geda', 'Caldas')">Minha saudação</button>
+    <div id="visor"> </div>
+        </br>
+    <button onclick="clique()">Limpar</button>
+
+    <script>
+        function clicar(texto){ // clicar(texto) = visor + texto
+            var a = window.document.querySelector('#visor')
+            a.innerText += ' '+texto
+        }
+        function clique () {
+            var b = window.document.querySelector('#visor')
+            b.innerText = ''            
+        }
+
+        function saudacao(nome, sobrenome) {
+            var visor = window.document.querySelector('#visor')
+            visor.innerText = "Olá, "+nome + " sobrenome "+sobrenome
+        }
+
+        function soma(numero1, numero2, numero3) {
+            alert(numero1 + numero2 + numero3)
+        }
+    </script>
+</body>
+</html>

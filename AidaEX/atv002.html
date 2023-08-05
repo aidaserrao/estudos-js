@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 02</title>
+    <style>
+        h1 {
+            background-color: rgb(144, 209, 209);
+            width: 300px;
+            height: 50px;
+        }
+        p {
+            background-color: rgb(178, 135, 218);
+            width: 300px;
+            height: 50px;
+        }
+        ol, ul, dl {
+            background-color: rgba(26, 145, 71, 0.315);
+            width: 300px;
+            height: 120px;
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Compra do mês!</h1>
+    <p>Lista Ordenada!</p>
+    <ol>
+        <li>Café;</li>
+        <li>Açúcar;</li>
+        <li>Leite;</li>
+        <li>Bolacha;</li>
+        <li>Manteiga;</li>
+    </ol>
+
+    <p>Lista Não Ordenada!</p>
+    <ul>
+        <li>Arroz;</li>
+        <li>Macarrão;</li>
+        <li>Feijão;</li>
+        <li>Azeite de Oliva;</li>
+        <li>Charque;</li>
+        <li>Calabresa</li>
+    </ul>
+
+    <p>Lista Mista!</p>
+    <p>Produto de limpeza!</p>
+    <dl>
+        <dt>Sabão em pó;</dt>
+        <dt>Sabão líquido;</dt>
+        <dt>Saboanete;</dt>
+        <dt>Sacola para lixo;</dt>
+        <dt> Creme dental;</dt>
+    </dl>
+
+    <button onclick="clicar('https://bougue.com.br/wp-content/uploads/2022/01/racas-de-gato-preto-e-branco.jpg')"> <strong>Imagem </strong> </button>
+    <img id="img" src="https://www.patasdacasa.com.br/sites/patasdacasa/files/styles/webp/public/noticias/2022/06/gato-frajola-conheca-as-caracteristicas-do-gato-preto-e-branco_1.jpg.webp?itok=HWmU6ITp" alt="">
+    
+    <button onclick="clicar('https://img.freepik.com/fotos-gratis/feche-o-gato-fofo-dentro-de-casa_23-2148882585.jpg?w=360')">Imagem 02</button>
+    <img id="img02" src="https://i.pinimg.com/236x/14/a3/25/14a325cff3c41084c71cb65cdac476ca--white-kittens-black-cats.jpg" alt="">
+
+    <button>Voltar</button>
+
+
+    <script>
+        function clicar (texto) {
+            var a = window.document.querySelector('#img')
+            a.src = texto
+     }
+     function clicar02 (texto02) {
+        var b = window.document.querySelector('#img02')
+        b.src = texto02
+     }
+    </script>
+   
+</body>
+</html>
